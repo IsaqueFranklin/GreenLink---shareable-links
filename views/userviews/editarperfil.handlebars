@@ -1,0 +1,127 @@
+<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amethysta&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Maitree&display=swap" rel="stylesheet">
+
+<div class="di">
+    <br>
+    <br>
+    <h5 class="title">Editando seu perfil</h5>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <form action="/user/editarperfil" method="post">
+      <input type="hidden" name="id" value="{{usuarios._id}}">
+      <label for="nome" class="text">Nome: </label>
+      <input type="text" id="nome" name="nome" class="form-control" value="{{usuarios.nome}}"></input>
+      <br>
+      <br>
+      <br>
+      <label for="email" class="text">Email: </label>
+      <input type="text" id="email" name="email" class="form-control" value="{{usuarios.email}}"></input>
+      <br>
+      <br>
+      <br>
+      <label for="bio" class="text">Sobre você: </label>
+      <input type="text" id="bio" name="bio" class="form-control" value="{{usuarios.bio}}"></input>
+      <br>
+      <br>
+      <label for="perfil" class="text">Link de uma foto sua no instagram para usar no perfil: </label>
+      <input type="text" id="perfil" name="perfil" class="form-control" value="{{usuarios.perfil}}"></input>
+      <br>
+      <br>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-light center"><small class="text">Salvar</small></button>
+    </form>
+    <br>
+</div>
+
+<style>
+.lop {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.di {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+.title {
+  font-family: 'Amethysta', serif;
+  font-size: 20px;
+}
+
+.text {
+  font-family: 'Slabo 27px', serif;
+  font-size: 15px;
+}
+
+.text2 {
+  font-family: 'Slabo 27px', serif;
+  font-size: 20px;
+}
+
+.io {
+  height: 300px;
+  width: 300px;
+}
+
+.ia {
+  height: 300px;
+  width: 300px;
+  padding: 10px;
+}
+
+.ai {
+  padding: 20px;
+}
+
+@media (min-width: 1000px){
+  .di {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+
+  .do {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  img {
+  width: 150px;
+  height: 150px;
+}
+}
+
+@media (max-width: 1000px){
+  .di {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  }
+
+  .do {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  img {
+  width: 150px;
+  height: 150px;
+}
+}
+
+</style>

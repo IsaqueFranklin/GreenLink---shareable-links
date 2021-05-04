@@ -1,0 +1,110 @@
+<div class="card di center">
+  <div class="card-body">
+    <br>
+    <br>
+    <img src="img/link.png" alt="Nova publicação">
+    <br>
+    <br>
+    <h5 class="card-title">Criar link</h5>
+    <br>
+    <p class="text">Escreva sua novo link adicionando imagens, marcadores, links e várias outras coisas
+      divertidas. :)</p>
+    <br>
+    <br>
+    <form action="/user/criarlink" method="post">
+      <br>
+      <br>
+      <input type="text" name="title" class="form-control" placeholder="Título para ser exibido"></input>
+      <br>
+      <br>
+      <input type="text" name="image" class="form-control" placeholder="Imagem"></input>
+      <br>
+      <br>
+      <textarea name="conteudo" id="conteudo" class="textarea"></textarea>
+      <br>
+      <br>
+      <input type="text" name="button" class="form-control" placeholder="Link de pagamento"></input>
+      <br>
+      <br>
+      <input type="text" name="whats" class="form-control" placeholder="link do whatsapp"></input>
+      <br>
+      <br>
+      <button type="submit" class="btn btn-dark">Publicar</button>
+    </form>
+    <br>
+    <br>
+  </div>
+</div>
+
+<script src="ckeditor/ckeditor.js"></script>
+<script>
+  CKEDITOR.replace('conteudo');
+  config.htmlEncodeOutput = true;
+  var data = CKEDITOR.instances.coment.getData()
+
+
+</script>
+
+<style>
+
+  .lop {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .di {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+  button {
+    border: none;
+    background-color: white;
+  }
+
+  .textarea {
+    height: 800px;
+  }
+
+@media (min-width: 1000px){
+  .di {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+
+  .do {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  img {
+  width: 150px;
+  height: 150px;
+}
+}
+
+@media (max-width: 1000px){
+  .di {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  }
+
+  .do {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  img {
+  width: 150px;
+  height: 150px;
+}
+}
+
+
+</style>

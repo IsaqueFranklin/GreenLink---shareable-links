@@ -1,0 +1,140 @@
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<meta name="description"
+  content="Leia o post {{links.title}} de {{links.autor}} publicado em {{links.data}}. Crie seu blog gratuitamente.">
+<div class="dog center">
+  <div class="justify di">
+    <br>
+    <br>
+    <h5 class="titulo">{{links.title}}</h5>
+    <br>
+    <p class="text diu">Link de <a href="/user/operfil/{{links.autor}}">@{{links.autor}}</a></p>
+    <br>
+    <div align="center">
+      <blockquote class="instagram-media" data-instgrm-permalink="{{links.image}}" data-instgrm-version="12" </blockquote> <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+    <br>
+    <div align="justify" class="diu">
+      {{{links.conteudo}}}
+    </div>
+    <br>
+    <a href="{{links.whats}}"><button class="butao">Whatsapp</button></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="fb-share-button" data-href="http://greenlink/user/link/{{links._id}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+    <br>
+    <br>
+    <a href="http://twitter.com/share" class="twitter-share-button"
+data-url="http://greenlink/user/link/{{links._id}}" data-text="{{links.title}}" data-count="horizontal" data-lang="pt" data-size="large">Tweetar</a>
+    <br>
+    <hr>
+    <br>
+    <p class="text diu">Veja mais links de <a href="/user/operfil/{{posts._id}}">@{{links.autor}}</a>.
+    </p>
+
+    {{#if user}}
+    <br>
+    {{else}}
+    <br>
+    <br>
+    <p class="text diu">Se cadastre agora mesmo e comece a criar links para seu negócio.</p>
+    <br>
+    <a href="/start/registro" class="diu"><button class="btn btn-dark">Cadastrar</button></a>
+    <br>
+    {{/if}}
+  </div>
+</div>
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+</script>
+
+<style>
+.butao {
+    border-radius: 5px;
+    text-transform: initial;
+    background-color: #90EE90;
+    font-family: 'Open Sans', sans-serif;
+    border: 5px;
+    color:black;
+    font-size: 14px;
+    height: 40px;
+    width: 90px;
+
+  }
+
+  .marker {
+    background-color: Yellow;
+  }
+
+  p {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .dog {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .titulo {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 30px;
+  }
+
+  .text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+  }
+
+@media (min-width: 1000px){
+  .di {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .do {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .diu {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  img {
+  width: 150px;
+  height: 150px;
+}
+}
+
+@media (max-width: 1000px){
+  .di {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  width: 100%;
+  }
+
+  .diu {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .do {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  img {
+  width: 150px;
+  height: 150px;
+}
+}
+
+</style>

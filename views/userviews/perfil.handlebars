@@ -1,0 +1,87 @@
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<div class="center">
+    <br>
+    <br>
+    <a href="/user/editar"><button class="btn btn-outline-success">Editar perfil</button></a>
+    <a href="/user/criarlink"><button class="btn btn-outline-success">Criar link</button></a>
+    <br>
+    <br>
+    <h1 class="titulo">{{usuarios.nome}}</h1>
+    <br>
+    <p>{{usuarios.bio}}</p>
+    <br>
+    <br>
+    <div align="center" class="in">
+      <blockquote class="instagram-media" data-instgrm-permalink="{{usuarios.perfil}}" data-instgrm-version="12" </blockquote> <script async src="//www.instagram.com/embed.js"></script>
+    </div>
+    <br>
+    <br>
+
+</div>
+
+{{#each links}}
+
+  <div class="card center di">
+    <div class="card-body">
+      <h2 class="titulo2">{{title}}</h2>
+      <br>
+      <a href="/user/link/{{_id}}"><button class="btn btn-outline-dark">Ver link</button></a>
+      <a href="/user/editarlink/{{_id}}"><button class="btn btn-outline-success">Editar</button></a>
+      <a href="/user/excluir/{{_id}}"><button class="btn btn-outline-danger">Deletar</button></a>
+      <hr>
+      <br>
+    <div class="fb-share-button" data-href="http://greenlink/user/link/{{links._id}}" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartilhar</a></div>
+    <br>
+    <br>
+    <a href="http://twitter.com/share" class="twitter-share-button"
+data-url="http://greenlink/user/link/{{links._id}}" data-text="{{links.title}}" data-count="horizontal" data-lang="pt" data-size="large">Tweetar</a>
+    
+    </div>
+  </div>
+
+{{/each}}
+
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js">
+</script>
+
+<style>
+
+.titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+}
+
+.titulo2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+.lol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media(min-width: 900px){
+  .di {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+}
+
+@media(max-width: 768px){
+  .di {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+}
+
+</style>

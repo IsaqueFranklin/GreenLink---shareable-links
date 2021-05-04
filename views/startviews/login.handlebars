@@ -1,0 +1,95 @@
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<div class="card di center">
+  <div class="card-body">
+    <br>
+    <br>
+    <img src="img/link.png">
+    <br>
+    <p class="card-text center">Faça seu login na GreenLink</p>
+    <br>
+    <form action="/start/login" method="post" class="do center">
+        <br>
+        <br>
+        <input type="email" name="email" placeholder="email" required>
+        <br>
+        <br>
+        <br>
+        <input type="password" name="senha" placeholder="senha" required>
+      <br>
+      <br>
+      <br>
+      <button type="submit" class="center btn btn-outline-dark">Entrar<button>
+      <br>
+      <br>
+    </form>
+      <br>
+  </div>
+</div>
+
+
+<style>
+
+button {
+  border: none;
+  background-color: white;
+}
+
+.g {
+  color: #00994d;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.h {
+  font-family: 'Montaga', serif;
+  color: #404040;
+  font-size: 15px;
+}
+
+.l {
+  color: #404040;
+  font-family: 'Playfair Display', serif;
+}
+
+@media (min-width: 1000px){
+  .di {
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 150px;
+    margin-bottom: 200px;
+  }
+
+  .do {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  img {
+  width: 150px;
+  height: 150px;
+}
+}
+
+@media (max-width: 1000px){
+  .di {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  }
+
+  .do {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  img {
+  width: 150px;
+  height: 150px;
+}
+}
+
+</style>

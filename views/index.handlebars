@@ -1,0 +1,133 @@
+<div class="heroSection">
+    <h1>GreenLink</h1>
+    <p>A plataforma dos links</p>
+    <div class="hero-btns">
+        <a href='start/registro'><button class="btns">Saber mais</button></a>
+        <a href="start/login"><button class="btns">Login</button></a>
+    </div>
+</div>
+
+<div class="aboutSection center">
+    <br>
+    <br>
+    <h2>O que é?</h2>
+    <br>
+    <p>A GreenLink é uma plataforma para criação de links especializados em compartilhamento pelo whatsapp/telegram. Com os links criados aqui é possível informar sobre um produto, serviço, evento e redirecionar o cliente para a página de venda.</p>
+    <br>
+    <img src="img/link.png">
+    <br>
+</div>
+
+
+<style>
+    .heroSection {
+        background: url('img/cover.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,0,0.2);
+        object-fit: contain;
+    }
+
+    .aboutSection {
+        height: 100%;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .btns {
+        background-color: transparent;
+        color: #fff;
+        padding: 8px 20px;
+        border: 1px solid white;
+        transition: all 0.3s ease-out;
+    }
+
+    .btns:hover,
+    .btns:hover {
+        background: #fff;
+        color: #242424;
+        transition: all 0.3s ease-out;
+    }
+
+    .hero-btns {
+        margin-top: 32px;
+    }
+
+    .hero-btns .btns {
+        margin: 6px;
+    }
+
+    .heroSection > h1 {
+        color: #fff;
+        font-size: 100px;
+        margin-top: -100px;
+    }
+
+    .heroSection > p {
+        margin-top: 8px;
+        color: #fff;
+        font-size: 32px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+@media screen and (min-width: 1000px){
+    .aboutSection {
+        height: 70%;
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+    @media screen and (max-width: 960px){
+    .heroSection > h1 {
+        font-size: 70px;
+        margin-top: -150px;
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .heroSection > h1 {
+        font-size: 50px;
+        margin-top: -100px;
+    }
+
+    .heroSection > p {
+        font-size: 30px;
+    }
+
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+    .btn {
+        width: 100%;
+    }
+
+    .aboutSection {
+        height: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+    }
+}
+</style>
